@@ -1,11 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/me.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portafolio Santiago</title>
 </head>
 <body>
+    <div id="particles-js" class="contenedor__particles"></div>
+
+    <div class="contenedor">
+      <header class="header">
+        <nav class="nav">
+          <h1 class="nav__title">SantiagoDev();</h1>
+
+          <ul class="nav__data">
+            <li> <a data-target="#home" class="nav__data--items  item--selected">Home</a> </li>
+            <li> <a data-target="#aboutMe" class="nav__data--items ">About Me</a> </li>
+            <li> <a data-target="#projects" class="nav__data--items ">Projects</a> </li>
+            <li> <a data-target="#blog" class="nav__data--items ">Blog</a> </li>
+          </ul>
+  
+          <ul class="nav__icons">
+            <a class="iconos icono--facebook" href="#"> <i class="fa-brands fa-facebook" target="_blank"></i> </a>
+            <a class="iconos icono--instagram" href="#"> <i class="fa-brands fa-instagram" target="_blank"></i></a>
+            <a class="iconos icono--github" href="https://github.com/SantiagoCarrillo27" target="_blank"> <i
+                class="fa-brands fa-github"></i> </a>
+            <a class="iconos icono--linkedin" href="https://www.linkedin.com/in/santiagocarrillo27/" target="_blank"> <i
+                class="fa-brands fa-linkedin-in"></i> </a>
+        </nav>
+      </header>
+
+      <main class="main">
+
+        <div id="home" data-content class="active contenedor__data">
+
+          <div class="personal__data">
+            <span class="span__saludo">Hello world, I'm</span>
+            <h2 class="name__data">Santiago Carrillo. <br> <span class="typed text__paragraph"></span> </h2>
     
+            <span class="span__saludo">welcome to my Website.👋</span>
+          </div>
+    
+    
+          <figure class="image">
+            <image class="figure--image" alt="image about me" src="img/me.png">
+          </figure>
+    
+        </div>
+
+        <div data-content id="aboutMe" class="aboutMe">
+
+          <div class="contenido__aboutMe">
+            <h3 class="title__aboutMe">About Me <span class="span__aboutMe"></span> </h3>
+  
+            <div class="container__image--text">
+            <figure class="image__aboutMe">
+              <img class="figure__image--aboutMe" src="img/me.png" alt="image about me">
+            </figure>
+  
+            <div class="text__aboutMe">
+            <p>Programador Junior con capacidad de gestión y ejecución de proyectos,
+              permitiendo entrega de resultados con altos estándares de calidad. Tecnólogo en
+              programación de software con 2 años de experiencia freelance, poseo amplio
+              conocimiento en Java, Angular, HTML, CSS y Bootstrap, conocimiento general en
+              JavaScript, Spring Boot , bases de datos relacionales como SQL
+              Server, PostgreSQL, MySQL, versionamiento de proyectos con GitHub y Bitbucket.
+              Destacando por mis habilidades comunicativas, expresividad oral y gran sentido de
+              liderazgo en ambientes colaborativos, siendo responsable con los compromisos que
+              adquiero.</p>
+          </div>
+            
+        </div>
+        <div class="skills__aboutMe">
+
+          <h3 class="title__skills">Skills <span class="span__skills">
+          </span></h3>
+
+          <ul class="container__title--skills">
+            <li><a href="#" class="links__skills">Tech Stock</a></li>
+            <li><a href="#" class="links__skills">Tools</a></li>
+          </ul>
+
+
+          <div class="card__skills">
+
+            <div class="card__skills--item">
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/HTML.png" alt="">
+              </picture>
+              <span>HTML</span>
+            </div>
+
+            <div class="card__skills--item">             
+               <picture class="picture__skills">
+                <img class="img__skills" src="img/CSS.png" alt="">
+              </picture>
+              <span>CSS</span>
+            </div>
+
+            <div class="card__skills--item">              
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/JAVASCRIPT.png" alt="">
+              </picture>
+              <span>JAVASCRIPT</span>
+            </div>
+
+            <div class="card__skills--item">              
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/JAVA.png" alt="">
+              </picture>
+              <span>JAVA</span>
+            </div>
+
+            <div class="card__skills--item">              
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/ANGULAR.png" alt="">
+              </picture>
+              <span>ANGULAR</span>
+            </div>
+
+            <div class="card__skills--item">              
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/BOOTSTRAP.png" alt="">
+              </picture>
+              <span>BOOTSTRAP</span>
+            </div>
+
+            <div class="card__skills--item">              
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/MYSQL.png" alt="">
+              </picture>
+              <span>MYSQL</span>
+            </div>
+
+            <div class="card__skills--item">             
+               <picture class="picture__skills">
+                <img class="img__skills" src="img/JENKINS.png" alt="">
+              </picture>
+              <span>JENKINS</span>
+            </div>
+
+            <div class="card__skills--item">              
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/RANCHER.png" alt="">
+              </picture>
+              <span>RANCHER</span>
+            </div>
+            <div class="card__skills--item">              
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/POSTMAN.png" alt="">
+              </picture>
+              <span>POSTMAN</span></div>
+            <div class="card__skills--item">             
+               <picture class="picture__skills">
+                <img class="img__skills" src="img/POSTGRESSQL.png" alt="">
+              </picture>
+              <span>POSTGRES</span>
+
+            </div>
+            <div class="card__skills--item">             
+               <picture class="picture__skills Springboot">
+                <img class="img__skills" src="img/SPRINGBOOT.png" alt="">
+              </picture>
+              <span>SPRINGBOOT</span>
+            </div>
+
+          </div>
+
+
+        </div>
+
+          </div>
+
+      
+
+        </div>
+
+
+        <div data-content id="projects"></div>
+        <div data-content id="blog"></div>
+
+      </main>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particle.js"></script>  
+
+
 </body>
 </html>
