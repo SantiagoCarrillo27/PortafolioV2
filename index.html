@@ -29,8 +29,8 @@
           </ul>
   
           <ul class="nav__icons">
-            <a class="iconos icono--facebook" href="#"> <i class="fa-brands fa-facebook" target="_blank"></i> </a>
-            <a class="iconos icono--instagram" href="#"> <i class="fa-brands fa-instagram" target="_blank"></i></a>
+            <a class="iconos icono--facebook" href="https://m.facebook.com/profile.php/?id=100009018003345"> <i class="fa-brands fa-facebook" target="_blank"></i> </a>
+            <a class="iconos icono--instagram" href="https://www.instagram.com/santhiago_2703"> <i class="fa-brands fa-instagram" target="_blank"></i></a>
             <a class="iconos icono--github" href="https://github.com/SantiagoCarrillo27" target="_blank"> <i
                 class="fa-brands fa-github"></i> </a>
             <a class="iconos icono--linkedin" href="https://www.linkedin.com/in/santiagocarrillo27/" target="_blank"> <i
@@ -84,13 +84,13 @@
           <h3 class="title__skills">Skills <span class="span__skills">
           </span></h3>
 
-          <ul class="container__title--skills">
-            <li><a href="#" class="links__skills">Tech Stock</a></li>
-            <li><a href="#" class="links__skills">Tools</a></li>
-          </ul>
+          <div class="container__title--skills">
+             <a onclick="showTab('tab1')" class=" links__skills tab-btn activo ">Tech Stock</a>
+             <a onclick="showTab('tab2')" class="links__skills tab-btn">Tools</a>  
+          </div>
 
 
-          <div class="card__skills">
+          <div id="tab1" class="card__skills tab-content activo">
 
             <div class="card__skills--item">
               <picture class="picture__skills">
@@ -172,37 +172,100 @@
               </picture>
               <span>SPRINGBOOT</span>
             </div>
-
           </div>
 
+
+          <div id="tab2"class="other__skills tab-content">
+            <div class="card__skills--item">
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/github.png" alt="">
+              </picture>
+              <span>GitHub</span>
+            </div>
+
+            <div class="card__skills--item">
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/git.png" alt="">
+              </picture>
+              <span>GIT</span>
+            </div>
+
+            <div class="card__skills--item">
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/npm.png" alt="">
+              </picture>
+              <span>NPM</span>
+            </div>
+
+            <div class="card__skills--item">
+              <picture class="picture__skills">
+                <img class="img__skills" src="img/nodo-js.png" alt="">
+              </picture>
+              <span>NODE JS</span>
+            </div>
+
+          </div>
 
         </div>
 
           </div>
 
-      
-
         </div>
 
+        <div data-content id="projects" class="projects__container">
 
-        <div data-content id="projects"></div>
+          <div class="projects__title">
+          <h2>Past Projects Experience</h2>
+          <p class="paragraph__projects">Explore the projects I've worked on so far </p>
+        </div>
+
+        <div class="cards__projects">
+          <article class="card__article">
+            <figure class="figure__project"><img src="img/potfolio.png" alt="imagen cards" class="img__projects"></figure>
+            <a href="#" class="title__cards--projects">Personal WebSite</a>
+            <p class="text__cards--projects">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas.</p>
+            <span>Html, Css, Js</span>
+          </article>
+
+          <article class="card__article">
+            <figure class="figure__project"><img src="img/encriptadorDeTexto.png" alt="imagen cards" class="img__projects"></figure>
+            <a href="https://santiagocarrillo27.github.io/encriptador/" class="title__cards--projects" target="_blank">Text Encrytador</a>
+            <p class="text__cards--projects">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas.</p>
+            <span class="span__projects">Tecnólogias</span>
+          </article>
+
+          <article class="card__article">
+            <figure class="figure__project"><img src="img/blackjack.png" alt="imagen cards" class="img__projects"></figure>
+            <a href="https://santiagocarrillo27.github.io/BlackJack/" class="title__cards--projects" target="_blank">BlackJack</a>
+            <p class="text__cards--projects">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas.</p>
+            <span class="span__projects">JavaScript, Bootstrap</span>
+          </article>
+
+          <article class="card__article">
+            <figure class="figure__project"><img src="img/potfolio.png" alt="imagen cards" class="img__projects"></figure>
+            <a href="#" class="title__cards--projects" target="_blank">Personal WebSite</a>
+            <p class="text__cards--projects">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas.</p>
+            <span class="span__projects">Tecnólogias</span>
+          </article>
+
+          <article class="card__article">
+            <figure class="figure__project"><img src="img/potfolio.png" alt="imagen cards" class="img__projects"></figure>
+            <a href="#" class="title__cards--projects" target="_blank">Personal WebSite</a>
+            <p class="text__cards--projects">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas.</p>
+            <span class="span__projects">Tecnólogias</span>
+          </article>
+        </div>
+
+        </div>
         <div data-content id="blog"></div>
 
       </main>
 
-
-
     </div>
-
-
-
-
-
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="js/main.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/particle.js"></script>  
-
 
 </body>
 </html>

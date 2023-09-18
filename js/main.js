@@ -16,7 +16,6 @@ window.addEventListener('focus', () => {
 const navBar = document.querySelector('.nav');
 
 window.addEventListener('scroll', () =>{
-    console.log('Evento scroll detectado'); // Verifica si el evento se está ejecutando
     if (window.scrollY > 0) {
       navBar.classList.add('transparent');
     } else {
@@ -81,3 +80,29 @@ targets.forEach(target =>{
   })
 
 })
+
+// Mostrar segundo TAB de Skills
+
+function showTab(tabId) {
+  // Ocultar todos los contenidos de las pestañas y desactivar los botones
+  const tabContents = document.querySelectorAll('.tab-content');
+  const tabButtons = document.querySelectorAll('.tab-btn');
+
+  tabContents.forEach(content => {
+      content.classList.remove('activo');
+  });
+
+  tabButtons.forEach(button => {
+      button.classList.remove('activo');
+  });
+
+  // Mostrar el contenido de la pestaña seleccionada y activar el botón correspondiente
+  const selectedTab = document.getElementById(tabId);
+  const selectedButton = document.querySelector(`[onclick="showTab('${tabId}')"]`);
+
+  selectedTab.classList.add('activo');
+  selectedButton.classList.add('activo');
+}
+
+// Mostrar la primera pestaña al cargar la página
+showTab('tab1');

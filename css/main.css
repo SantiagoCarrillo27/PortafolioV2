@@ -142,8 +142,9 @@
 .container__title--skills {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: .5rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 
 }
 
@@ -151,17 +152,7 @@
   padding: .5rem;
   text-decoration: none;
   color: #fff;
-  background-color: #363749ee;
   border-radius: .3rem;
-}
-
-
-.card__skills{
-  display: flex;
-  width: 100%;
-  flex-wrap:wrap ;
-  gap: 2.3rem;
-  justify-content: space-between;
 }
 
 .card__skills--item{
@@ -190,3 +181,81 @@
   background-size: cover;
 }
 
+.projects__container{
+  margin-top: 90px;
+  width: 100%;
+  height: 100%;
+  margin-bottom:3rem;
+}
+.projects__title{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.paragraph__projects{
+  color: rgb(224, 235, 153);
+}
+.cards__projects{
+  width: 64%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: .5rem;
+
+}
+.card__article{
+  width: 310px;
+  height: 360px;
+  background-color: #272525d9;
+  border-radius: .5rem;
+  padding: 1rem 1rem;
+}
+.card__article:hover{
+  background-color: #454242d9;
+  transform: scale(1rem);
+}
+.figure__project{
+  width: 275px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: .7rem;
+
+}
+.img__projects{
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  border-radius: .5rem;
+}
+
+.title__cards--projects{
+  display:block;
+  text-align: center;
+  margin-bottom: .7rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.text__cards--projects{
+  overflow: hidden;
+  height: 100px;
+}
+
+
+.links__skills.activo {
+   background-color: #535466ee;
+}
+
+/* Estilos para el contenido de las pestañas */
+.tab-content {
+  display: none;
+}
+
+.tab-content.activo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2.2rem;
+}
