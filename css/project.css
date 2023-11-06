@@ -1,0 +1,61 @@
+.projects__container{
+    margin-top: 90px;
+    width: 100%;
+    height: 100%;
+    margin-bottom:3rem;
+  }
+  .projects__title{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  
+  .paragraph__projects{
+    color: rgb(224, 235, 153);
+  }
+  .cards__projects{
+    width: 64%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: .5rem;
+  
+  }
+  .card__article{
+    width: 310px;
+    height: 360px;
+    background-color: #2f355c7f;
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+  }
+  .card__article:hover{
+    background-color: #2f3c55d9;
+    transform: scale(1rem);
+  }
+  .figure__project{
+    width: 275px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: .7rem;
+  
+  }
+  .img__projects{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    border-radius: .5rem;
+  }
+  
+  .title__cards--projects{
+    display:block;
+    text-align: center;
+    margin-bottom: .7rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+  .text__cards--projects{
+    overflow: hidden;
+    height: 100px;
+  }

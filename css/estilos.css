@@ -37,3 +37,20 @@
     border-radius: 3px;
     background: rgb(224, 235, 153);
 }
+
+
+.links__skills.activo {
+    background-color: #535466ee;
+ }
+ 
+ /* Estilos para el contenido de las pestañas */
+ .tab-content {
+   display: none;
+ }
+ 
+ .tab-content.activo {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   gap: 2.2rem;
+ }
