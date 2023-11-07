@@ -24,7 +24,7 @@
   <div class="contenedor">
     <header class="header">
       <nav class="nav">
-        <h1 class="nav__title">SantiagoDev();</h1>
+        <h1 class="nav__title" id="logo">SantiagoDev();</h1>
 
         <ul class="nav__data">
           <li> <a data-target="#home" class="nav__data--items  item--selected">Home</a> </li>
@@ -49,32 +49,35 @@
 
       <div id="home" data-content class="active contenedor__data">
 
-        <div class="personal__data">
-          <span class="span__saludo">Hello world, I'm</span>
-          <h2 class="name__data">Santiago Carrillo. <br> <span class="typed text__paragraph"></span> </h2>
+        <div class="media__data">
 
-          <span class="span__saludo">welcome to my Website.👋</span>
+        <div class="personal__data">
+          <p class="span__saludo animate__animated animate__zoomIn">Hello world, I'm</p>
+          <h2 class="name__data animate__animated animate__slideInUp">Santiago Carrillo. <br> <span class="typed text__paragraph"></span> </h2>
+
+          <p class="span__saludo animate__animated animate__fadeInRight">welcome to my Website.👋</p>
         </div>
 
 
         <figure class="image">
-          <image class="figure--image animate__animated animate__bounceInRight" alt="image about me" src="img/me.png">
+          <image class="figure--image animate__animated animate__fadeInRight" alt="image about me" src="img/me.png">
         </figure>
+      </div>
 
       </div>
 
       <div data-content id="aboutMe" class="aboutMe">
 
         <div class="contenido__aboutMe">
-          <h3 class="title__aboutMe">About Me <span class="span__aboutMe"></span> </h3>
+          <h3 class="title__aboutMe animate__animated animate__fadeInDown">About Me <span class="span__aboutMe"></span> </h3>
 
           <div class="container__image--text">
             <figure class="image__aboutMe">
-              <img class="figure__image--aboutMe" src="img/me.png" alt="image about me">
+              <img class="figure__image--aboutMe animate__animated animate__bounceInUp" src="img/me.png" alt="image about me">
             </figure>
 
             <div class="text__aboutMe">
-              <p>Programador Junior con capacidad de gestión y ejecución de proyectos,
+              <p class="animate__animated animate__bounceInRight">Programador Junior con capacidad de gestión y ejecución de proyectos,
                 permitiendo entrega de resultados con altos estándares de calidad. Tecnólogo en
                 programación de software con 2 años de experiencia freelance, poseo amplio
                 conocimiento en Java, Angular, HTML, CSS y Bootstrap, conocimiento general en
@@ -88,7 +91,7 @@
           </div>
           <div class="skills__aboutMe">
 
-            <h3 class="title__skills">Skills <span class="span__skills">
+            <h3 class="title__skills animate__animated animate__fadeInDown">Skills <span class="span__skills">
               </span></h3>
 
             <div class="container__title--skills">
@@ -101,84 +104,97 @@
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/HTML.png" alt="">
+                  <img class="img__skills" src="img/HTML.png" alt="Img de referencia">
                 </picture>
-                <span>HTML</span>
+                <span class="title__cards">HTML</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/CSS.png" alt="">
+                  <img class="img__skills" src="img/CSS.png" alt="Img de referencia">
                 </picture>
-                <span>CSS</span>
+                <span class="title__cards">CSS</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/JAVASCRIPT.png" alt="">
+                  <img class="img__skills" src="img/JAVASCRIPT.png" alt="Img de referencia">
                 </picture>
-                <span>JAVASCRIPT</span>
+                <span class="title__cards">JAVASCRIPT</span>
+                <p class="text__card--hidden">Medium</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/JAVA.png" alt="">
+                  <img class="img__skills" src="img/JAVA.png" alt="Img de referencia">
                 </picture>
-                <span>JAVA</span>
+                <span class="title__cards">JAVA</span>
+                <p class="text__card--hidden">Medium</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/ANGULAR.png" alt="">
+                  <img class="img__skills" src="img/ANGULAR.png" alt="Img de referencia">
                 </picture>
-                <span>ANGULAR</span>
+                <span class="title__cards">ANGULAR</span>
+                <p class="text__card--hidden">Medium</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/BOOTSTRAP.png" alt="">
+                  <img class="img__skills" src="img/BOOTSTRAP.png" alt="Img de referencia">
                 </picture>
-                <span>BOOTSTRAP</span>
+                <span class="title__cards">BOOTSTRAP</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/MYSQL.png" alt="">
+                  <img class ="img__skills"  src="img/MYSQL.png" alt="Img de referencia">
                 </picture>
-                <span>MYSQL</span>
+                <span class="title__cards">MYSQL</span>
+                <p class="text__card--hidden">Medium</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/JENKINS.png" alt="">
+                  <img class="img__skills" src="img/JENKINS.png" alt="Img de referencia">
                 </picture>
-                <span>JENKINS</span>
+                <span class="title__cards">JENKINS</span>
+                <p class="text__card--hidden">Medium</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/RANCHER.png" alt="">
+                  <img class="img__skills" src="img/RANCHER.png" alt="Img de referencia">
                 </picture>
-                <span>RANCHER</span>
+                <span class="title__cards">RANCHER</span>
+                <p class="text__card--hidden">Medium</p>
               </div>
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/POSTMAN.png" alt="">
+                  <img class="img__skills" src="img/POSTMAN.png" alt="Img de referencia">
                 </picture>
-                <span>POSTMAN</span>
+                <span class="title__cards">POSTMAN</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/POSTGRESSQL.png" alt="">
+                  <img class="img__skills" src="img/POSTGRESSQL.png" alt="Img de referencia">
                 </picture>
-                <span>POSTGRES</span>
+                <span class="title__cards">POSTGRES</span>
+                <p class="text__card--hidden">Medium</p>
+
 
               </div>
               <div class="card__skills--item">
                 <picture class="picture__skills Springboot">
-                  <img class="img__skills" src="img/SPRINGBOOT.png" alt="">
+                  <img class="img__skills" src="img/SPRINGBOOT.png" alt="Img de referencia">
                 </picture>
-                <span>SPRINGBOOT</span>
+                <span class="title__cards">SPRINGBOOT</span>
+                <p class="text__card--hidden">Medium</p>
               </div>
             </div>
 
@@ -186,30 +202,34 @@
             <div id="tab2" class="other__skills tab-content">
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/github.png" alt="">
+                  <img class="img__skills" src="img/github.png" alt="Img de referencia">
                 </picture>
-                <span>GitHub</span>
+                <span class="title__cards">GitHub</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/git.png" alt="">
+                  <img class="img__skills" src="img/git.png" alt="Img de referencia">
                 </picture>
-                <span>GIT</span>
+                <span class="title__cards">GIT</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/npm.png" alt="">
+                  <img class="img__skills" src="img/npm.png" alt="Img de referencia">
                 </picture>
-                <span>NPM</span>
+                <span class="title__cards">NPM</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
 
               <div class="card__skills--item">
                 <picture class="picture__skills">
-                  <img class="img__skills" src="img/nodo-js.png" alt="">
+                  <img class="img__skills" src="img/nodo-js.png" alt="Img de referencia">
                 </picture>
-                <span>NODE JS</span>
+                <span class="title__cards">NODE JS</span>
+                <p class="text__card--hidden">Advance</p>
               </div>
 
             </div>
@@ -222,12 +242,12 @@
 
       <div data-content id="projects" class="projects__container">
 
-        <div class="projects__title">
+        <div class="projects__title animate__animated animate__fadeInDown">
           <h2>Past Projects Experience</h2>
           <p class="paragraph__projects">Explore the projects I've worked on so far </p>
         </div>
 
-        <div class="cards__projects">
+        <div class="cards__projects animate__animated animate__zoomIn">
           <article class="card__article">
             <figure class="figure__project"><img src="img/potfolio.png" alt="imagen cards" class="img__projects">
             </figure>
@@ -283,7 +303,7 @@
 
         <div class="container__blogs">
 
-          <div class="blog__page">
+          <div class="blog__page animate__animated animate__zoomIn">
 
             <div class="blogUno">
               <span class="span__blog--uno"></span>
@@ -318,7 +338,7 @@
             <h3 class="topics__blog">Topics</h3>
 
             <div class="blog__tecnology">
-              <a href="#" class="blog__links">NodeJS</a>
+              <a href="#" class="blog__links">JavaScript</a>
               <a href="#" class="blog__links">Tecnology</a>
             </div>
 

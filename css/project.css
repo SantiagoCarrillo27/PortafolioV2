@@ -28,11 +28,17 @@
     background-color: #2f355c7f;
     border-radius: .5rem;
     padding: 1rem 1rem;
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
   }
   .card__article:hover{
     background-color: #2f3c55d9;
-    transform: scale(1rem);
+    transform: translatey(-20px);
+    -webkit-transform: translatey(-6px);
+    -moz-transform: translatey(-20px);
   }
+
   .figure__project{
     width: 275px;
     height: 150px;

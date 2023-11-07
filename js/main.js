@@ -106,3 +106,22 @@ function showTab(tabId) {
 
 // Mostrar la primera pestaña al cargar la página
 showTab('tab1');
+
+
+
+// Recargar la pagina con dando click en el logo
+
+// Espera a que el documento esté listo
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtén el elemento del logo por su ID
+    const logo = document.getElementById("logo");
+
+    // Agrega un evento click al logo
+    logo.addEventListener("click", function (event) {
+        // Previene el comportamiento predeterminado del enlace
+        event.preventDefault();
+
+        // Refresca la página, lo que la llevará al principio
+        window.location.reload();
+    });
+});

@@ -114,11 +114,14 @@
     display: flex;
     align-items: center;
     padding: 0 1rem;
-    gap: .7rem;
+    gap: .8rem;
     font-weight: 700;
+    position: relative;
   }
-  
-  
+  .card__skills--item:hover{
+    background-color: #2f3c55d9;
+  }
+
   .picture__skills{
     width: 40px;
     height: 40px;
@@ -130,4 +133,40 @@
     text-align: center;
     height: 40px;
     background-size: cover;
+    transition: transform 0.3s ease-in-out; /* Ajusta la duración y la función de temporización según tus preferencias */
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
   }
+
+  .card__skills--item:hover .img__skills{
+    transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+  }
+ 
+  
+  .title__cards {
+    transition: transform 0.5s; /* Agregamos una transición para el título */
+  }
+  
+  .text__card--hidden {
+    opacity: 0;
+    transform: translateY(90%); /* Inicialmente, el texto está oculto debajo del título */
+    transition: opacity 0.5s, transform 0.5s; /* Agregamos transiciones para la opacidad y el desplazamiento */
+    font-size: 13px;
+    position: absolute;
+    left: 4.3rem;
+    top:1.7rem;
+  }
+  
+  .card__skills--item:hover .title__cards {
+    transform: translateY(-60%); /* Cuando se hace hover, el título se desplaza hacia arriba */
+  }
+  
+  .card__skills--item:hover .text__card--hidden {
+    opacity: 1;
+    transform: translateY(0); /* Cuando se hace hover, el texto se muestra y se desplaza hacia arriba */
+  }
+  
+
+  

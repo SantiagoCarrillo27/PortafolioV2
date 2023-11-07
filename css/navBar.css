@@ -1,132 +1,224 @@
-.header{
-    position: fixed;
+.header {
+  position: fixed;
+  z-index: 10000;
 }
+
 .nav {
-    position: fixed;
-    width: 100%;
-    padding: 2rem 5.4rem 20px 60px;
-    display: flex;
-    justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 2rem 5.4rem 20px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transparent {
+  background-color: #1f2236e2;
+}
+
+.nav__title {
+  color: rgb(235, 244, 180);
+  font-family: 'Anonymous Pro', monospace;
+  cursor: pointer;
+  line-height: 42px;
+  letter-spacing: 2px;
+}
+
+.nav__data {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+  cursor: pointer;
+  line-height: 42px;
+}
+
+.nav__data--items {
+  text-decoration: none;
+  color: #665d5d;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav__data--items:hover {
+  color: rgb(136, 132, 132);
+}
+
+.nav__data--items::after {
+  content: "";
+  background-color: rgb(136, 132, 132);
+  position: absolute;
+  left: 0;
+  top: 1.2em;
+  height: 2px;
+  border-radius: 1px;
+  width: 0;
+  transition: 0.3s;
+}
+
+.nav__data--items:hover::after {
+  width: 100%;
+}
+
+.item--selected {
+  color: #fff;
+}
+
+.item--selected:hover {
+  color: #fff;
+}
+
+.item--selected::after {
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav__icons {
+  display: flex;
+  gap: 1em;
+}
+
+.iconos {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property:
+    outline-offset, outline-color,
+    background-color;
+  transition-duration: 0.25s;
+}
+
+.iconos:hover {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.iconos:hover i {
+  animation: shake 0.25s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
   }
 
-  .transparent{
-    background-color: #1f2236e2;
+  20% {
+    transform: rotate(-15deg);
   }
 
-  .nav__title {
-    color:rgb(235, 244, 180);
-    font-family: 'Anonymous Pro', monospace;
-    cursor: pointer;
-    line-height: 42px;
-    letter-spacing: 2px;
+  30% {
+    transform: rotate(15deg);
   }
-  
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+.icono--linkedin:hover {
+  background-color: #0A66C2;
+}
+
+.icono--github:hover {
+  background-color: #11aa09;
+}
+
+.icono--facebook:hover {
+  background-color: #1873EB;
+}
+
+.icono--instagram:hover {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45);
+}
+
+
+
+/* 972-768-576-360 */
+
+@media screen and (max-width:972px) {
+
+  .nav {
+    padding: 2rem 1rem;
+  }
+
   .nav__data {
     display: flex;
-    gap: 1.5em;
+    gap: .5em;
     list-style: none;
     cursor: pointer;
     line-height: 42px;
   }
-  
-  .nav__data--items{
-    text-decoration: none;
-    color:#665d5d ;
-    position: relative;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  
-  .nav__data--items:hover{
-    color: rgb(136, 132, 132);
-  }
-  .nav__data--items::after{
-    content: "";
-    background-color: rgb(136, 132, 132);
-    position: absolute;
-    left: 0;
-    top:1.2em ;
-    height: 2px;
-    border-radius: 1px;
-    width: 0;
-    transition: 0.3s;
-  }
-  
-  .nav__data--items:hover::after{
-    width: 100%;
-  }
-  .item--selected{
-    color: #fff;
-  }
-  
-  .item--selected:hover{
-    color: #fff;
-  }
-  .item--selected::after{
-    width: 100%;
-    background-color: #fff;
-  }
-  
+
   .nav__icons {
-    display: flex;
-    gap: 1em;
+    gap: .5em;
   }
-  
+
+}
+
+@media screen and (max-width:768px) {
+  .nav {
+    padding: 2rem 1rem;
+  }
+
+  .nav__title {
+    font-size: 20px;
+  }
+
+  .nav__data {
+    gap: .4rem;
+  }
+
+  .nav__data--items {
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  .nav__icons {
+    gap: .5em;
+
+  }
+
   .iconos {
-    display: block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     color: #fff;
     font-size: 1.2rem;
-    line-height: 42px;
-    text-align: center;
-    border-radius: 50%;
-    outline: 2px solid #fff;
-    transition-property:
-      outline-offset, outline-color,
-      background-color;
-    transition-duration: 0.25s;
+    line-height: 37px;
   }
-  
-  .iconos:hover {
-    outline: 2px solid #fff;
-    outline-offset: 4px;
+
+
+}
+
+@media screen and (max-width:576px) {
+
+  .nav{
+    padding: 2rem 3rem;
   }
-  
-  .iconos:hover i {
-    animation: shake 0.25s;
+  .nav__data {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 7rem;
   }
-  
-  @keyframes shake {
-    10% {
-      transform: rotate(15deg);
-    }
-  
-    20% {
-      transform: rotate(-15deg);
-    }
-  
-    30% {
-      transform: rotate(15deg);
-    }
-  
-    40% {
-      transform: rotate(-15deg);
-    }
+
+  .nav__icons {
+    gap: .8em;
+
   }
-  
-  .icono--linkedin:hover {
-    background-color: #0A66C2;
+
+  .iconos {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 37px;
   }
-  
-  .icono--github:hover {
-    background-color: #11aa09;
-  }
-  
-  .icono--facebook:hover {
-    background-color: #1873EB;
-  }
-  
-  .icono--instagram:hover {
-    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45);
-  }
+
+ 
+
+}
